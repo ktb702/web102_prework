@@ -177,7 +177,7 @@ let explained = listOfUnfundedGames.length > 0 ? `${listOfUnfundedGames.length} 
 let UnfundedGamesStr = `A total of $${totalRaised.toLocaleString('en-US')} has been raised for ${GAMES_JSON.length} games. Currently, ${explained}`;
 
 // create a new DOM element containing the template string and append it to the description container
-descriptionContainer.innerHTML = UnfundedGamesStr;
+descriptionContainer.innerHTML += UnfundedGamesStr;
 
 /************************************************************************************
  * Challenge 7: Select & display the top 2 games
